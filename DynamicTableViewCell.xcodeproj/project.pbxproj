@@ -16,6 +16,9 @@
 		89ED2F7E2992B29600C5E6EF /* DynamicTableViewCellTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED2F7D2992B29600C5E6EF /* DynamicTableViewCellTests.swift */; };
 		89ED2F882992B29600C5E6EF /* DynamicTableViewCellUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED2F872992B29600C5E6EF /* DynamicTableViewCellUITests.swift */; };
 		89ED2F8A2992B29600C5E6EF /* DynamicTableViewCellUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED2F892992B29600C5E6EF /* DynamicTableViewCellUITestsLaunchTests.swift */; };
+		89ED2F9A2992B32200C5E6EF /* CardCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED2F982992B32200C5E6EF /* CardCellTableViewCell.swift */; };
+		89ED2F9B2992B32200C5E6EF /* CardCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89ED2F992992B32200C5E6EF /* CardCellTableViewCell.xib */; };
+		89ED2F9F2992B78400C5E6EF /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED2F9E2992B78400C5E6EF /* Card.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		89ED2F832992B29600C5E6EF /* DynamicTableViewCellUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicTableViewCellUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ED2F872992B29600C5E6EF /* DynamicTableViewCellUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCellUITests.swift; sourceTree = "<group>"; };
 		89ED2F892992B29600C5E6EF /* DynamicTableViewCellUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicTableViewCellUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		89ED2F982992B32200C5E6EF /* CardCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCellTableViewCell.swift; sourceTree = "<group>"; };
+		89ED2F992992B32200C5E6EF /* CardCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardCellTableViewCell.xib; sourceTree = "<group>"; };
+		89ED2F9E2992B78400C5E6EF /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,8 @@
 		89ED2F652992B29400C5E6EF /* DynamicTableViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				89ED2F9C2992B76D00C5E6EF /* Models */,
+				89ED2F962992B2B600C5E6EF /* Views */,
 				89ED2F662992B29400C5E6EF /* AppDelegate.swift */,
 				89ED2F682992B29400C5E6EF /* SceneDelegate.swift */,
 				89ED2F6A2992B29400C5E6EF /* ViewController.swift */,
@@ -125,6 +133,39 @@
 				89ED2F892992B29600C5E6EF /* DynamicTableViewCellUITestsLaunchTests.swift */,
 			);
 			path = DynamicTableViewCellUITests;
+			sourceTree = "<group>";
+		};
+		89ED2F962992B2B600C5E6EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				89ED2F972992B2D500C5E6EF /* CardCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		89ED2F972992B2D500C5E6EF /* CardCell */ = {
+			isa = PBXGroup;
+			children = (
+				89ED2F982992B32200C5E6EF /* CardCellTableViewCell.swift */,
+				89ED2F992992B32200C5E6EF /* CardCellTableViewCell.xib */,
+			);
+			path = CardCell;
+			sourceTree = "<group>";
+		};
+		89ED2F9C2992B76D00C5E6EF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				89ED2F9D2992B77300C5E6EF /* Card */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		89ED2F9D2992B77300C5E6EF /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				89ED2F9E2992B78400C5E6EF /* Card.swift */,
+			);
+			path = Card;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +275,7 @@
 				89ED2F732992B29600C5E6EF /* LaunchScreen.storyboard in Resources */,
 				89ED2F702992B29600C5E6EF /* Assets.xcassets in Resources */,
 				89ED2F6E2992B29400C5E6EF /* Main.storyboard in Resources */,
+				89ED2F9B2992B32200C5E6EF /* CardCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +302,9 @@
 			files = (
 				89ED2F6B2992B29400C5E6EF /* ViewController.swift in Sources */,
 				89ED2F672992B29400C5E6EF /* AppDelegate.swift in Sources */,
+				89ED2F9F2992B78400C5E6EF /* Card.swift in Sources */,
 				89ED2F692992B29400C5E6EF /* SceneDelegate.swift in Sources */,
+				89ED2F9A2992B32200C5E6EF /* CardCellTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
