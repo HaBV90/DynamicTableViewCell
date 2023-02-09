@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		895EA5DC2993FB59000911BE /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895EA5DB2993FB59000911BE /* CustomButton.swift */; };
 		89ED2F672992B29400C5E6EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED2F662992B29400C5E6EF /* AppDelegate.swift */; };
 		89ED2F692992B29400C5E6EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED2F682992B29400C5E6EF /* SceneDelegate.swift */; };
 		89ED2F6B2992B29400C5E6EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89ED2F6A2992B29400C5E6EF /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		895EA5DB2993FB59000911BE /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		89ED2F632992B29400C5E6EF /* DynamicTableViewCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicTableViewCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89ED2F662992B29400C5E6EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89ED2F682992B29400C5E6EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		895EA5DA2993FB49000911BE /* CustomButton */ = {
+			isa = PBXGroup;
+			children = (
+				895EA5DB2993FB59000911BE /* CustomButton.swift */,
+			);
+			path = CustomButton;
+			sourceTree = "<group>";
+		};
 		89ED2F5A2992B29400C5E6EF = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +148,7 @@
 		89ED2F962992B2B600C5E6EF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				895EA5DA2993FB49000911BE /* CustomButton */,
 				89ED2F972992B2D500C5E6EF /* CardCell */,
 			);
 			path = Views;
@@ -302,6 +313,7 @@
 			files = (
 				89ED2F6B2992B29400C5E6EF /* ViewController.swift in Sources */,
 				89ED2F672992B29400C5E6EF /* AppDelegate.swift in Sources */,
+				895EA5DC2993FB59000911BE /* CustomButton.swift in Sources */,
 				89ED2F9F2992B78400C5E6EF /* Card.swift in Sources */,
 				89ED2F692992B29400C5E6EF /* SceneDelegate.swift in Sources */,
 				89ED2F9A2992B32200C5E6EF /* CardCellTableViewCell.swift in Sources */,

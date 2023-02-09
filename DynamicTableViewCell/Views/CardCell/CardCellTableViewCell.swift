@@ -8,14 +8,13 @@
 import UIKit
 
 class CardCellTableViewCell: UITableViewCell {
+    @IBOutlet var leftImage: UIImageView!
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var rightImage: UIImageView!
+    @IBOutlet var detailLabel: UILabel!
 
-    @IBOutlet weak var leftImage: UIImageView!
-    @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var rightImage: UIImageView!
-    @IBOutlet weak var detailLabel: UILabel!
-    
     override func awakeFromNib() {
-        super.awakeFromNib()
+         super.awakeFromNib()
         // Initialization code
     }
 
@@ -24,5 +23,4 @@ class CardCellTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
 }

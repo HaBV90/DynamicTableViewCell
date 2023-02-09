@@ -8,8 +8,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet var tableView: UITableView!
     
     var data: [Card] = [
         Card(avatar: UIImage(named: "Image")!, title: "Box Fan", detail: "Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan Box Fan", rightImage: nil),
@@ -37,16 +36,13 @@ class ViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
-        self.tableView.register(UINib(nibName: "CardCellTableViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCardCell")
+        tableView.register(UINib(nibName: "CardCellTableViewCell", bundle: nil), forCellReuseIdentifier: "ReusableCardCell")
         tableView.rowHeight = UITableView.automaticDimension
         tableView.estimatedRowHeight = 96
     }
-    
-    
 }
 
 extension ViewController: UITableViewDataSource {
-    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
@@ -62,6 +58,4 @@ extension ViewController: UITableViewDataSource {
     }
 }
 
-extension ViewController: UITableViewDelegate {
-    
-}
+extension ViewController: UITableViewDelegate {}
